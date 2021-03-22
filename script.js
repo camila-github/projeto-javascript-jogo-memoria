@@ -1,12 +1,29 @@
 /* Elemento da DOM*/
 const cards = document.querySelectorAll('.card');
 const cardsLength = document.querySelectorAll('.card').length;
+
 /* Declaracao das variaveis*/
 let hasFlippedCard = false;
 let firstCard, secondCard; //utilizado para a primeira e segunda carta
 let lockBoard = false; //Usado para bloquear o tabuleiro
 
+//Função que checa se as cartas são iguais
+const checkForMatch = () => (firstCard.dataset.card === secondCard.dataset.card) ? disableCards() : unflipCards();
 
+/*Função que desabilita as cartas. Remove o evento do clique, e a função flipCard()*/
+const disableCards = () => {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    resetBoard();
+}
+
+/*Função que reseta o tabuleiro. As variáveis 'firstCard' e 'secondCard' precisam ser resetadas após cada rodada. 
+É criado um método 'resetBoard()', e depois é extraido 'hasFlippedCard = false' e lockBoard = false' para esse metodo. 
+É utilizado o 'destructuring assignment' do ES6: [var1, var2] = ['value1', 'value2']*/
+const resetBoard = () => {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
 
 /*Função para virar carta. A classe 'flip' será adicionada ao elemento. É selecionado todos os elementos '.card' com 
 'document.querySelectorAll', através da lista com 'forEach', é adicionado o detector de evento com 'addEventListener'. 
@@ -36,19 +53,6 @@ function flipCard() {
     checkForMatch();
 }
 
-//Função que checa se as cartas são iguais
-function checkForMatch() {
-    return (firstCard.dataset.card === secondCard.dataset.card) ? disableCards() : unflipCards();
-}
-
-/*Função que desabilita as cartas. Remove o evento do clique, e a função flipCard()*/
-function disableCards() {
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
-
-    resetBoard();
-}
-
 /*Funcão que desvira as cartas, caso as cartas nao sejam iguais.
 Em cada carta retira a class 'Flip'*/
 function unflipCards() {
@@ -61,14 +65,6 @@ function unflipCards() {
         lockBoard = false;
         resetBoard();
     }, 1500);
-}
-
-/*Função que reseta o tabuleiro. As variáveis 'firstCard' e 'secondCard' precisam ser resetadas após cada rodada. 
-É criado um método 'resetBoard()', e depois é extraido 'hasFlippedCard = false' e lockBoard = false' para esse metodo. 
-É utilizado o 'destructuring assignment' do ES6: [var1, var2] = ['value1', 'value2']*/
-function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
 }
 
 /*Função que embaralha as cartas. Quando 'display: flex' é declarada no container, 'flex-items' são ordenados 

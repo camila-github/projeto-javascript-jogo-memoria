@@ -1,7 +1,19 @@
-### Treinamento Digital Innovation One - BOOTCAMP React Web Developer (DIO)
+## Projeto: Jogo da Memória
 
-- O projeto publicado é referente ao treinamento do Curso BOOTCAMP React Web Developer da Digital Innovation One (https://digitalinnovation.one).
+- O intuito do projeto foi publicar uma pagina, onde consta o desenvolvimento do jogo da memória.
 
-- Foi publicado uma pagina, onde consta o desenvolvimento do jogo da memória. Nesse projeto, o desafio foi criar um jogo da memória utilizando apenas HTML, CSS e Javascript. Foi aplicado os conceitos de efeitos 3D no CSS e lógica de programação utilizando condicionais, Immediately Invoked Function Expression e manipulação de Array, Flip Card.
+- O projeto publicado é referente ao treinamento do Curso Bootcamp React Web Developer da Digital Innovation One 
 
-- Site publicado no link: https://camila-github.github.io/projeto-javascript-jogo-memoria/.
+- [https://digitalinnovation.one](https://digitalinnovation.one).
+
+## Conceitos utilizados
+
+- Utilizado apenas HTML, CSS e Javascript. 
+- Aplicado conceitos de efeitos 3D no CSS 
+- Lógica de programação utilizando condicionais
+- Manipulação de Array
+- Uso de Flip Card.
+
+## Site publicado no link abaixo:
+
+- [https://camila-github.github.io/projeto-javascript-jogo-memoria/](https://camila-github.github.io/projeto-javascript-jogo-memoria/).

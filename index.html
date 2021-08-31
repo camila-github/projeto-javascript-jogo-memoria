@@ -1,117 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinamento -DIO- Jogo da Memória</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Jogo da Memoria - DIO</title>
 </head>
-
 <body>
-    <div class="img-fundo"></div>
-
-    <header class="container">
-        <div class="banner" id="selector">
-            <div class="bordas"><b>JOGO DA MEMÓRIA</b></div>
-        </div>
-    </header>
-
-    <main class="memory-game">
-        <!--Cada carta, receberá um nome, para que no javascript verifique, se as cartas são iguais. 
-        Será usado no HTML o atributo data-card, para fornecer um nome as cartas.
-        Detalhe: Para adicionar informação extra em elementos HTML, podemos utilizar o atributo data-*. 
-        A partir da seguinte sintaxe: data-*, onde * pode ser qualquer palavra, o atributo será inserido 
-        na propriedade dataset do elemento, no javascript.
-
-        Ao adicionar data-card no HTML, no javascript deverá ser informado a variavel + dataset + a palavra de referencia,
-        que nesse caso seria:  'firstCard.dataset.card'
-
-        Pode ser qualquer nome do data-*. Por exemplo, poderia usar no HTML o data-framework, no javascript seria 
-        utilizado como: 'firstCard.dataset.framework'-->
-
-        <div class="card" data-card="0_0">
-            <img class="card-front" src="./img/0_0.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_1">
-            <img class="card-front" src="./img/0_1.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_2">
-            <img class="card-front" src="./img/0_2.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_3">
-            <img class="card-front" src="./img/0_3.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_4">
-            <img class="card-front" src="./img/0_4.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_5">
-            <img class="card-front" src="./img/0_5.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_6">
-            <img class="card-front" src="./img/0_6.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="1_1">
-            <img class="card-front" src="./img/1_1.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="1_2">
-            <img class="card-front" src="./img/1_2.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_0">
-            <img class="card-front" src="./img/0_0.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_1">
-            <img class="card-front" src="./img/0_1.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_2">
-            <img class="card-front" src="./img/0_2.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_3">
-            <img class="card-front" src="./img/0_3.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_4">
-            <img class="card-front" src="./img/0_4.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_5">
-            <img class="card-front" src="./img/0_5.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="0_6">
-            <img class="card-front" src="./img/0_6.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="1_1">
-            <img class="card-front" src="./img/1_1.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-        <div class="card" data-card="1_2">
-            <img class="card-front" src="./img/1_2.jpeg" alt="Face da carta">
-            <img class="card-back" src="./img/box.jpg" alt="Verso da carta">
-        </div>
-
-
-    </main>
-
-    <footer id="text-footer">
-        <p>Imagens retiradas do site Pexels - Desenvolvido por <a href="https://github.com/camila-github" target="_blank" class="link-padrao">Camila Augusta</a></p>
-    </footer>
-
-    <script src="./script.js"></script>
+    <div id="game"></div>
+    <script src="/assets/js/card.js"></script>
+    <script src="/assets/js/app.js"></script>    
 </body>
-
 </html>

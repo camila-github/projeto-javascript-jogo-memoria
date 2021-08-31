@@ -1,0 +1,162 @@
+:root{
+    --firstColor: #6b1286;
+    --colorFont: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(/assets/img/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face{
+    font-family: papercut;
+    src: url('/assets/fonts/papercut.ttf');
+}
+
+@font-face{
+    font-family: fontPlay;
+    src: url('/assets/fonts/fontPlay.ttf');
+}
+
+/* WelcomeScreen */
+.gamelogo {
+    margin-top: 1px;
+    text-align: center;
+    font-size: 120px;
+    font-family: papercut;
+    color: var(--colorFont);
+}
+
+#start{
+    font-family: papercut;
+    font-size: 80px;
+    color:rgb(214, 193, 6);
+}
+
+.finishScreen {
+    margin-top: 140px;
+    font-family: papercut;
+    font-size: 100px;
+    color:rgb(214, 193, 6);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+    border: none;
+}
+
+.hide {
+    animation: fadeOut 1s;
+    height: 0;
+    opacity: 0;
+}
+
+/* PlayGame */
+.grid-game {
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1px auto;
+}
+
+.card {
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 2px 5px;
+    animation: fadeInUpBig 1.5s;
+    -moz-animation: fadeInUpBig 1.5s;
+    -webkit-animation: fadeInUpBig 1.5s;
+}
+
+.frontCard,
+.backCard,
+.card {
+    width: 250px;
+    height: 160px;
+}
+
+.frontCard,
+.backCard {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.frontCard {
+    background: url('/assets/img/card2.png');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+}
+
+.backCard {
+    transform: rotateY(180deg);
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+    width: 240px;
+    right: 0px;
+    height: 150px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.match .frontCard {
+    background: transparent !important;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.match:hover {
+    cursor: auto;
+}
+
+/* Transition Effect */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; } 
+}
+
+@keyframes fadeInUpBig {
+    0% { 
+        opacity: 0;
+        transform: translateY(600px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1170px){
+    .finishScreen{
+        font-size: 60px;
+    }
+}

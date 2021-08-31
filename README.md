@@ -41,4 +41,4 @@
 
 ## Site publicado no link abaixo:
 
-- []().
+- [https://camila-github.github.io/projeto-javascript-jogo-memoria/](https://camila-github.github.io/projeto-javascript-jogo-memoria/).

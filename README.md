@@ -38,7 +38,3 @@
 <p align="center">
    <img src="https://github.com/camila-github/projeto-javascript-jogo-memoria/blob/main/docs/video.gif"/>
 </p>
-
-## Site publicado no link abaixo:
-
-- [https://camila-github.github.io/projeto-javascript-jogo-memoria/](https://camila-github.github.io/projeto-javascript-jogo-memoria/).

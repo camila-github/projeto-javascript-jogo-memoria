@@ -36,7 +36,7 @@
 ## Vídeo de demonstração do aplicativo
 
 <p align="center">
-   <img src=""/>
+   <img src="https://github.com/camila-github/projeto-javascript-jogo-memoria/blob/main/docs/video.gif"/>
 </p>
 
 ## Site publicado no link abaixo:

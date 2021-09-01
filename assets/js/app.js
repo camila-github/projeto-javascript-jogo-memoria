@@ -72,7 +72,7 @@ let gameStart = function(){
     doubleCards.forEach((item) => {
         let name = item.name;
         let backgroundImage = `url(${item.img})`;
-
+        console.log(backgroundImage)
         const gameCard = document.createElement('div');
         gameCard.classList.add('card');
         gameCard.dataset.name = name;

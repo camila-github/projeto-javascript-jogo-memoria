@@ -96,7 +96,7 @@ button:focus {
 }
 
 .frontCard {
-    background: url('/assets/img/card2.png');
+    background: url('../img/card2.png');
     background-repeat: no-repeat;
     border-radius: 50%;
     border: none;

@@ -1,7 +1,7 @@
 const CARDS = [
     {
         name: 'card1',
-        img: 'assets/img/banana.jpeg'
+        img: "assets/img/banana.jpeg"
     },
     {
         name: 'card2',
@@ -13,11 +13,11 @@ const CARDS = [
     },
     {
         name: 'card4',
-        img: 'assets/img/laranja.jpeg'
+        img: "assets/img/laranja.jpeg"
     },
     {
         name: 'card5',
-        img: 'assets/img/maca.jpeg'
+        img: "assets/img/maca.jpeg"
     },
     {
         name: 'card6',

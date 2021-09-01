@@ -11,19 +11,14 @@
 
 body {
     text-align: center;
-    background-image: url(/assets/img/background.png);
+    background-image: url('../img/background.png');
     background-attachment: fixed;
     background-size: cover;
 }
 
 @font-face{
     font-family: papercut;
-    src: url('/assets/fonts/papercut.ttf');
-}
-
-@font-face{
-    font-family: fontPlay;
-    src: url('/assets/fonts/fontPlay.ttf');
+    src: url('../fonts/papercut.ttf');
 }
 
 /* WelcomeScreen */

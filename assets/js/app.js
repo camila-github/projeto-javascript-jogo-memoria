@@ -39,7 +39,7 @@ let gameStart = function(){
     gameScreen.appendChild(gameGrid);
 
     /* lets duplicate the cards array */
-    let doubleCards = cards.concat(cards);
+    let doubleCards = CARDS.concat(CARDS);
 
     /* game variables */
     let gameCount = 0;
@@ -120,7 +120,7 @@ let gameStart = function(){
                     previousClick = click;
                 } 
                 
-                if(congratsGame == cards.length){
+                if(congratsGame == CARDS.length){
                     gameGrid.classList.add('hide');
                     setTimeout(gameFinish, 1400);
                 }

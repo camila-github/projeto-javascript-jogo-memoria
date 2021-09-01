@@ -1,4 +1,4 @@
-const cards = [
+const CARDS = [
     {
         name: 'card1',
         img: 'assets/img/banana.jpeg'

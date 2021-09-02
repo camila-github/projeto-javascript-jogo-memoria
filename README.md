@@ -34,10 +34,9 @@
   [https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model)
 
 ## Site publicado no link abaixo:
-[https://camila-github.github.io/projeto-javascript-jogo-memoria/](https://camila-github.github.io/projeto-javascript-jogo-memoria/)
+[https://camila-github.github.io/projeto-js-dio-jogo-da-velha/](https://camila-github.github.io/projeto-js-dio-jogo-da-velha/)
 
 ## Vídeo de demonstração do aplicativo
-
 <p align="center">
    <img src="https://github.com/camila-github/projeto-javascript-jogo-memoria/blob/main/docs/video.gif"/>
 </p>
